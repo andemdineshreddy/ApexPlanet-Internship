@@ -1,0 +1,120 @@
+:root {
+    --primary: rgba(255, 70, 86, 0.9);
+    --secondary: rgba(89, 205, 255, 0.9);
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: darkgray;
+    /* background: linear-gradient(45deg, #0a0a0a, #2a2a2a); */
+    /* background: linear-gradient(to top,rgba(0,0,0,0.3)50%,  rgba(0,0,0,0.3)50%), url(3.jpg); */
+    background-position: center;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    /* background: var(--glass); */
+    background-color: white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+.content {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.avatar:hover {
+    transform: scale(1.1) rotate(15deg);
+}
+
+h2 {
+    color: black;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgba(5, 25, 23, 0.75);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.socials a {
+    width: 40px;
+    height: 40px;
+    background: var(--glass);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color:black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 12px 30px;
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    letter-spacing: 2px;
+    box-shadow: 0 5px 15px rgba(255, 70, 86, 0.4);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotateX(0) rotateY(0); }
+    25% { transform: translateY(-20px) rotateX(5deg) rotateY(5deg); }
+    75% { transform: translateY(20px) rotateX(-5deg) rotateY(-5deg); }
+}

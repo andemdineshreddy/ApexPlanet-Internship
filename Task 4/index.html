@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a web developer skilled in HTML, CSS, and JavaScript.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <h2>Product Listing</h2>
+
+  <select onchange="filterCategory(this.value)">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothes">Clothes</option>
+  </select>
+
+  <select onchange="sortProducts(this.value)">
+    <option value="default">Sort</option>
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+  </select>
+
+  <div class="products" id="productList"></div>
+
+  <h2>To-Do List</h2>
+
+  <input id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+
+  <div id="taskList"></div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <input id="name" placeholder="Name"><br><br>
+  <input id="email" placeholder="Email"><br><br>
+  <button onclick="submitForm()">Submit</button>
+  <p id="msg"></p>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

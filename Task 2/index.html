@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intermediate HTML CSS JS Task</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- FLEXBOX NAVBAR -->
+<div class="navbar">
+  <h2>My Project</h2>
+  <p>HTML | CSS | JS</p>
+</div>
+
+<div class="container">
+
+  <!-- CONTACT FORM -->
+  <div class="form-box">
+    <h2>Contact Form</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Enter Name">
+      <input type="email" id="email" placeholder="Enter Email">
+      <button type="submit">Submit</button>
+      <p class="error" id="errorMsg"></p>
+    </form>
+  </div>
+
+  <!-- TODO LIST -->
+  <div class="todo-box">
+    <h2>To-Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add Task</button>
+
+    <div id="taskList"></div>
+  </div>
+
+</div>
+
+<script src="script.js"> </script>
+
+</body>
+</html>

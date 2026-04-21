@@ -1,0 +1,73 @@
+
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #0f766e;
+  color: white;
+  padding: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: #e6fffa;
+}
+
+/* SECTIONS */
+section {
+  padding: 30px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* TODO */
+#taskList div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  background: #f1f5f9;
+  padding: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* HEADER */
+header {
+  background: teal;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* API BOX */
+.api-box {
+  text-align: center;
+  margin: 30px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  header {
+    font-size: 18px;
+  }
+  .carousel {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* NAVBAR */
+nav {
+  background: teal;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+/* SECTIONS */
+section {
+  padding: 20px;
+}
+
+/* PROJECT CARDS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* TODO */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  margin: 5px;
+  padding: 8px;
+}

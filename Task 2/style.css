@@ -1,0 +1,80 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FORM STYLING */
+.form-box {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkcyan;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* TODO LIST */
+.todo-box {
+  background: #e8f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* FLEXBOX NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: teal;
+  color: white;
+  padding: 15px;
+}

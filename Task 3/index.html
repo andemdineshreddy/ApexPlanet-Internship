@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 - Advanced JS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Advanced JavaScript Project</h2>
+</header>
+
+<!-- IMAGE CAROUSEL -->
+<div class="carousel">
+  <img id="carouselImage" src="https://picsum.photos/id/101/600/300">
+  <button class="btn prev" onclick="prevImage()">❮</button>
+  <button class="btn next" onclick="nextImage()">❯</button>
+</div>
+
+<!-- API FETCH -->
+<div class="api-box">
+  <h3>Get Random Joke 😂</h3>
+  <button onclick="getJoke()">Fetch Joke</button>
+  <p id="jokeText"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

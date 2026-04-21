@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinesh Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>MyPortfolio</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Projects</a></li>
+    <li><a href="#todo">Tasks</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>Hello, I'm Dinesh 👋</h1>
+  <p>Frontend Developer | JavaScript Enthusiast</p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I build responsive and interactive web applications using HTML, CSS, and JavaScript.</p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <h2>Projects / Products</h2>
+
+  <div class="controls">
+    <select id="category">
+      <option value="all">All</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothes">Clothes</option>
+    </select>
+
+    <select id="sort">
+      <option value="default">Sort</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+  </div>
+
+  <div id="productList" class="grid"></div>
+</section>
+
+<!-- TODO -->
+<section id="todo">
+  <h2>Task Manager</h2>
+  <input id="taskInput" placeholder="Enter task">
+  <button onclick="addTask()">Add</button>
+  <div id="taskList"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+  <button onclick="submitForm()">Submit</button>
+  <p id="msg"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
